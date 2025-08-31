@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.background {
+  position: fixed;
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  right: 15%;
+  background-size: cover;
+  background: url(./iphone6.png) no-repeat center center;
+  z-index: -1;
+  transform: rotate(30deg);
+}
+
+header {
+  background: #ff416c;
+  color: white;
+  padding: 60px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-1 {
+  max-width: 50%;
+}
+
+.header-1 h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header-1 h2 {
+  margin: 20px 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "Knewave";
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: white;
+  color: #ff416c;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #333;
+  color: white;
+}
+
+.header-img {
+  max-width: 40%;
+}
+
+.header-img img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: rotate(-8deg);
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 10%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 30%;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+
+.feature h3 {
+  color: #ff416c;
+}
+.spin {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pricing {
+  background: #f9f9f9;
+  padding: 70px 10%;
+  text-align: center;
+}
+
+.pricing h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  border-color: #ff416c;
+}
+
+.plan h3 {
+  margin: 0 0 10px;
+  color: #333;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.plan p {
+  margin: 8px 0;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #ff416c;
+}
+
+.plan button {
+  padding: 10px 20px;
+  background: #ff416c;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.plan button:hover {
+  background: #333;
+}
+
+footer {
+  background: #ff416c;
+
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+page {
+  background: #f9f9f9;
+  position: fixed;
+  height: 200px;
+}
+.navbar {
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 40px 10px 10px;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.navbar ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transform: 0.3s;
+}
+.navbar ul li a:hover {
+  color: #ffd6e0;
+}
