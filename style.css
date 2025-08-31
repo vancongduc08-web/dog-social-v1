@@ -180,36 +180,13 @@ page {
   height: 200px;
 }
 .navbar {
-  padding: 15px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  padding: 10px 40px 10px 10px;
-}
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-.navbar ul li {
-  display: inline-block;
-  margin: 0 20px;
-}
-.navbar ul li a {
-  text-decoration: none;
+
   color: white;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 16px;
-  transform: 0.3s;
-}
-.navbar ul li a:hover {
-  color: #ffd6e0;
+  text-decoration: none;
+  padding: 50px;
+  justify-content: flex-end;
+  margin-right: 40px;
 }
